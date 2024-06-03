@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnSepeconOpcionUnixe1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainCatalogoUnisex">
+
+        <LinearLayout
+            android:id="@+id/mainUnixest"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#282B59"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHomen"
+            android:layout_width="67dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="2dp"
+            android:background="#00000000"
+            android:textColor="@color/white"
+            android:textSize="96sp"
+            android:textStyle="bold"
+            app:icon="@drawable/home"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainUnixest" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="mainUnixest" />
+
+        <Button
+            android:id="@+id/btnSpinner"
+            android:layout_width="65dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#00000000"
+            android:isScrollContainer="true"
+            android:tintMode="src_atop"
+            app:icon="@drawable/btn_opcion_celular"
+            app:iconPadding="1dp"
+            app:iconSize="25dp"
+            app:iconTint="#232323"
+            app:layout_constraintEnd_toStartOf="@+id/mainLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnuser" />
+
+        <Button
+            android:id="@+id/btnLupa"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000"
+            android:gravity="left|end"
+            android:padding="15dp"
+            app:icon="@drawable/btn_lupa_busqueda"
+            app:iconTint="#121111"
+            app:layout_constraintEnd_toStartOf="@+id/btnCarritoCompra"
+            app:layout_constraintTop_toBottomOf="@+id/mainUnixest" />
+
+        <Button
+            android:id="@+id/btnCarritoCompra"
+            android:layout_width="50dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000"
+            android:contentDescription="@string/app_name"
+            android:gravity="left|end"
+            android:padding="13dp"
+            app:icon="@drawable/carito_compara"
+            app:iconTint="#131313"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainUnixest" />
+
+        <Button
+            android:id="@+id/btnuser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#00000000"
+            android:padding="11dp"
+            app:icon="@drawable/user"
+            app:iconSize="25dp"
+            app:layout_constraintStart_toStartOf="@+id/mainUnixest"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/iconoinstagram"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:textSize="20sp"
+            app:icon="@drawable/simboloinstagram"
+            app:iconSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainUnixest" />
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="39dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="#02FFFFFF"
+            android:padding="11dp"
+            android:text=""
+            app:icon="@drawable/simbolofacebook"
+            app:iconSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/iconoinstagram"
+            app:layout_constraintTop_toTopOf="@+id/mainUnixest" />
+
+        <ImageView
+            android:id="@+id/mainLogo"
+            android:layout_width="233dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000"
+            android:padding="13dp"
+            app:iconTint="#131313"
+            app:layout_constraintEnd_toStartOf="@+id/btnLupa"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toEndOf="@+id/btnSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/mainUnixest"
+            app:srcCompat="@drawable/logo" />
+        <ImageView
+            android:id="@+id/imagemarioPool"
+            android:layout_width="343dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mario_pool"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainLogo" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imagemarioPool" />
+
+        <TextView
+            android:id="@+id/videojuegoUnixe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Video juego"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagemarioPool"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/marioPoolUmixe1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Mario bros X Deadpool"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videojuegoUnixe1" />
+
+        <TextView
+            android:id="@+id/precioUnixe1"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="$ 54.900"
+            android:textColor="#5D60A6"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marioPoolUmixe1" />
+
+        <Button
+            android:id="@+id/btnSepeconOpcionUnixest1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#7EF2B0"
+            android:text="Seleccionar opciones"
+            android:textColor="#0D0D0D"
+
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precioUnixe1" />
+
+        <ImageView
+            android:id="@+id/imgBobEinstein"
+            android:layout_width="343dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSepeconOpcionUnixest1"
+            app:srcCompat="@drawable/bob_einstein" />
+
+        <TextView
+            android:id="@+id/otrosUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Otros"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBobEinstein" />
+
+        <TextView
+            android:id="@+id/bobEinsteinUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Esponja Einstein"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otrosUnixest1" />
+
+        <TextView
+            android:id="@+id/precioUnixest2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="$ 54.900"
+            android:textColor="#5D60A6"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bobEinsteinUnixest1" />
+
+        <Button
+            android:id="@+id/btnSepeconOpcionUnixest2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#7EF2B0"
+            android:text="Seleccionar opciones"
+            android:textColor="#0D0D0D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precioUnixest2" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imgBobEinstein" />
+
+        <ImageView
+            android:id="@+id/imgBragonBallPinkFloyd"
+            android:layout_width="343dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSepeconOpcionUnixest2"
+            app:srcCompat="@drawable/dragon_ball_pink_floyd" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imgBragonBallPinkFloyd" />
+
+        <TextView
+            android:id="@+id/MusicaUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Musica"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBragonBallPinkFloyd" />
+
+        <TextView
+            android:id="@+id/dragonBallPinkFloydUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Bragon Ball X Pink Foyd"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MusicaUnixest1" />
+
+        <TextView
+            android:id="@+id/presioUnixest3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="$ 54.900"
+            android:textColor="#5D60A6"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dragonBallPinkFloydUnixest1" />
+
+        <Button
+            android:id="@+id/btnSepeconOpcionUnixest3"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#7EF2B0"
+            android:text="Seleccionar opciones"
+            android:textColor="#0D0D0D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presioUnixest3" />
+
+        <ImageView
+            android:id="@+id/imgRickAndMortySicodelico"
+            android:layout_width="343dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSepeconOpcionUnixest3"
+            app:srcCompat="@drawable/rick_and_morty_sicodelico" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imgRickAndMortySicodelico" />
+
+        <TextView
+            android:id="@+id/dibujosAnimadosUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Dibujos Animados"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgRickAndMortySicodelico" />
+
+        <TextView
+            android:id="@+id/RickAndMortySicodelicoUnixest1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Rick and Morty"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dibujosAnimadosUnixest1" />
+
+        <TextView
+            android:id="@+id/precioUnixest4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="$ 54.900"
+            android:textColor="#5D60A6"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RickAndMortySicodelicoUnixest1" />
+
+        <Button
+            android:id="@+id/btnSepeconOpcionUnixest4"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#7EF2B0"
+            android:text="Seleccionar opciones"
+            android:textColor="#0D0D0D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precioUnixest4" />
+
+        <ImageView
+            android:id="@+id/imgBragonBallGohan"
+            android:layout_width="343dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSepeconOpcionUnixest4"
+            app:srcCompat="@drawable/dragon_ball_gohan" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="imgBragonBallGohan" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Anime"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBragonBallGohan" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Son Gohan"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="$ 54.900"
+            android:textColor="#5D60A6"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+        <Button
+            android:id="@+id/btnSepeconOpcionUnixest5"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#7EF2B0"
+            android:text="Seleccionar opciones"
+            android:textColor="#0D0D0D"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "336457703243",
+    "firebase_url": "https://shopgeekblad-default-rtdb.firebaseio.com",
+    "project_id": "shopgeekblad",
+    "storage_bucket": "shopgeekblad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336457703243:android:f053182c7c96f7d1ef92ce",
+        "android_client_info": {
+          "package_name": "com.example.tienda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFfLj7jCLXX-eCNnAU1XMIY2X1gAJ_c8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
